@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.test{
+    display: none;
+}
+body{
+    background-color: #333;
+  padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: #123;
+  height: auto;
+    width: 80%;
+    padding-top: 20px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+}
+.container .img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+ 
+}
+.upload label{
+    color: white;
+    font-size: 25px;
+    border: 2px white dashed;
+    padding: 10px;
+}
+#img{
+    max-width: 250px;
+    max-height: 250px;
+}
+#upl{
+    display: none;
+}
+.filters{
+    width: 100%;
+    padding: 15px;
+}
+.filters ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  
+    direction: rtl;
+}
+.filters ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+    align-items: start;
+    color: white;
+    
+}
+.filters ul li input{
+    width: 100%;
+}
+.filters ul li:last-child{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+    justify-content: center;
+}
+.filters ul li:last-child button,.filters ul li:last-child a{
+    background-color: green;
+    color: white;
+    padding: 10px;
+width: 90px;
+    border: none;
+cursor: pointer;
+}
+.filters ul li:last-child button{
+width: 70px;
+
+}
+@media screen and (max-width:660px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    
+    }
+   
+}
